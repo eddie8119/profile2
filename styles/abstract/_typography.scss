@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Outfit:wght@200;300;400;500&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: $main-bg-color;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+//全域
+img {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+}
+
+#img {
+	width: 90%;
+	height: 50%;
+	overflow: hidden;
+	opacity: 0;
+	animation: load 2s forwards;
+	animation-play-state: paused;
+}
+
+#img:hover img {
+	transform: scale(1.25);
+}
+
+@keyframes load {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,256 @@
+#main {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia;
+  background-color: #f8f9f9;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+img {
+  width: 100%;
+  height: 220px;
+  transition: transform 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#img {
+  width: 90%;
+  height: 50%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-animation: load 2s forwards;
+          animation: load 2s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#img:hover img {
+  transform: scale(1.25);
+}
+
+#navbar {
+  display: none;
+  justify-content: flex-end;
+  background-color: #efbe8a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#links-group {
+  display: flex;
+  font-size: 1.2rem;
+  margin: 0.75em 1em 0.75em 0;
+}
+
+#links-group > a {
+  padding: 0 0.5em 0;
+  color: #1f2326;
+}
+
+#links-group > a:hover {
+  color: darkred;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+#greeting {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #efbe8a;
+}
+
+#greeting > h1 {
+  font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
+.container-aboutMe {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #d6dbdf;
+  margin-top: 3em;
+  padding: 3rem;
+  width: 90%;
+  max-width: 850px;
+}
+
+.header {
+  margin: 2em auto 1.5em;
+  text-align: center;
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+.sub-header {
+  font-size: clamp(1.3rem, 1.4vw, 1.9rem);
+  margin-bottom: 0.7em;
+}
+
+.paragraph {
+  text-align: justify;
+  font-size: clamp(1rem, 1.25vw, 1.75rem);
+}
+
+.paragraph-container {
+  margin: 2rem 0;
+}
+.paragraph-container .sub-header {
+  color: #efbe8a;
+  font-weight: bold;
+}
+
+#projects,
+#advantages {
+  padding: 3rem;
+}
+
+#project-item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #d6dbdf;
+  padding: 1.5rem;
+}
+#project-item .link-style {
+  color: #efbe8a;
+}
+
+#project-item > header {
+  margin: 1rem 0;
+  font-size: clamp(1.2rem, 1.25vw, 1.75rem);
+}
+
+#project-item button {
+  margin: 1rem 0;
+  font-size: clamp(1rem, 1.1vw, 1.25rem);
+  color: #efbe8a;
+  border: 1.5px solid #efbe8a;
+}
+#project-item button:hover {
+  color: #ffffff;
+  background-color: #efbe8a;
+}
+
+#project-item > a {
+  color: darkred;
+  font-size: clamp(1rem, 1.1vw, 1.25rem);
+}
+
+#project-item > a:hover {
+  color: #efbe8a;
+  text-decoration: underline;
+}
+
+#description {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.1vw, 1.25rem);
+  min-height: 210px;
+}
+
+.description-title {
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  background-color: #efbe8a;
+}
+
+#button {
+  margin: 0.5rem 1rem 1.5rem;
+}
+
+#button:hover {
+  opacity: 0.85;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efbe8a;
+  padding: 2rem 0 0.5rem 0;
+}
+#footer #contact-list {
+  display: flex;
+  align-items: center;
+}
+#footer .h6 {
+  margin-top: 1rem;
+}
+
+#contact-list > a {
+  margin-right: 1.25rem;
+  color: #183a1d;
+}
+
+#contact-list > a:hover {
+  transform: translateY(-0.3rem);
+}
+
+@media only screen and (max-width: 450px) {
+  #navbar {
+    opacity: 0.9;
+  }
+  #links-group {
+    flex-direction: column;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #form-container {
+    width: 50vw;
+  }
+  #navbar {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
