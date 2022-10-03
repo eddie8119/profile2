@@ -38,3 +38,4 @@ const observer2 = new IntersectionObserver(function (entries, observer2) {
 }, options2);
 
 project.forEach(project => observer2.observe(project));
+

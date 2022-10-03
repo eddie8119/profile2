@@ -51,6 +51,12 @@ img {
   transform: scale(1.25);
 }
 
+#welcome-section {
+  height: 100vh;
+  background-image: url(/image/background.jpg);
+  background-size: cover;
+}
+
 #navbar {
   display: none;
   justify-content: flex-end;
