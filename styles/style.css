@@ -192,6 +192,7 @@ img {
   margin-top: 1rem;
   font-size: clamp(1rem, 1.1vw, 1.25rem);
   min-height: 210px;
+  padding: 0 15px;
 }
 
 .description-title {
