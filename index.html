@@ -15,51 +15,102 @@
   </head>
   <body>
 <!-- welcome -->
-  <div id="welcome-section">
-    <!-- <img src="/image/youtube.jpg" alt=""> -->
-    <!-- <video class="video-background" src="/image/方生糖youtube.mp4" autoplay loop muted plays-inline></video> -->
+  <div id="welcome-section">   
     <div id="navbar">
         <div id="links-group">
             <a href="#welcome-section">Home</a>
             <a href="#about-me">About</a>
             <a href="#projects">Projects</a>
-            <a href="#advantages">其他作品</a>
+            <a href="#advantages">其他作品</a>            
+            <a href="https://www.youtube.com/channel/UC-1teyrSCuxtpgia0XMr-Ng">Youtube</a>
         </div>
     </div>
     <div id="greeting">
         <h1>Hey, I am Jing.</h1>
     </div>    
   </div>
-    <!-- ABOUT ME -->
-    <section class="container-fluid" id="about-me">
+      <!-- ABOUT ME -->
+      <section class="container-fluid" id="about-me">
         <div class="row justify-content-center">
-            <div class="container-aboutMe col-xs-12 col-md-6">
+            <div class="container-aboutMe col-xs-12 col-md-8">
                 <header class="header">ABOUT ME</header>
                 <div class="paragraph-container">
                     <header class="sub-header">我是誰</header>
-                    <!-- 目標成為MIT Media Lab、戴森類型的設計工程人才，融合設計及技術腦。 -->
-                    <p class="paragraph">大家好，我是王旌，擁有設計與工程背景，可以左手設計規劃，右手將之實踐。擅長思考設計點子變現，編程可以很好的讓我手腦合一創造。</p>
+                    <p class="paragraph">大家好，我是王旌，設計與工程背景，左手設計規劃，右手實踐。擅長思考設計，發明家屬性。編程可以讓我手腦合一創造。</p>
                 </div>
                 <div class="paragraph-container">
                     <header class="sub-header">我的前端技能</header>
-                    <p class="paragraph">採用 vue  nuxt 框架進行網頁開發， tailwind Sass 管理css。下面是我使用不同的前端技能構建的一些項目。讓我們來看看！
+                    <p class="paragraph">
+                      前端技術採用 Vue2 / Vue3，Nuxt 框架進行網頁開發，用 Tailwind框架，Sass管理css。擅長將技術連結使用落地場景。例如作品(室內工程管理手帳) 將科技業的專案工具帶入傳產室內設計業，並結合室內產業的關鍵字設定。作品(建築之神-我要告解)把留言板功能，連結給社群的私密表白。現在目標正在學習Vue源碼，透過仿照源碼精進對程式的理解應用。
                     </p>
                 </div>
-                <!-- <div class="paragraph-container">
-                  <header class="sub-header">What are my advantages?</header>
-                  <p class="paragraph">我很敏銳於創造，做發明。有著細膩於常人的洞察力，能把東西洞悉很深刻，並將體察分享於youtube自媒體。我也對產品有著細膩的論述力，人們對我的表達總會感到耳目一新。有了洞察後，會給我新的契機，基於觀察後的總結往上疊築新的構想。
-                  </p>
-                </div> -->
             </div>
-        </div>
-    </section>
+        </div>    
+      </section>
 
     <!-- 前端專案 -->
     <section class="container-fluid" id="projects">
           <div>
-              <h3 class="header">PROJECTS - 軟體</h3>
+              <h3 class="header">PROJECTS - 前端軟體</h3>
           </div>        
           <div class="row justify-content-center ">
+            <!-- 專案 -->
+            <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
+              <header>室內現場工程管理手帳</header>
+              <div id='img'><img  src="/image/建築之神要告解.jpg"></div>
+              <div id="description">
+                <p class="">幫助室內葉工地管理效率提升
+                </p>
+                <p>
+                  •  Vue3 / Firebase
+                  <br>• 順應工地的動態運作
+                  <br>• 助減少遺漏施做的機會
+                </p>
+              </div>
+              <a href="https://www.instagram.com/reel/CwcoI7YK2cF/" target="_blank">使用推廣</a>
+              <a href="" target="_blank"><button type="button" class="btn btn-outline-primary">稍後</button></a>
+            </div>              
+              <!-- 專案 -->
+              <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
+                <header>建築之神-我要告解</header>
+                <div id='img'><img  src="/image/建築之神要告解.jpg"></div>
+                <div id="description">
+                  <p class="">建築社群匿名留言板
+                  </p>
+                  <p>
+                    •  Vue3 / Firebase
+                    <br>• 在專業的路上迷茫時的心情匯聚起來，提供大家找到一種新的方向答案
+                  </p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=cDFy50Gko1Y" target="_blank">使用推廣</a>
+                <a href="https://archconfession-1d0cd.firebaseapp.com/" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
+              </div>
+              <!-- 專案 -->
+              <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
+                <header>前端主題Youtube頻道</header>
+                <div id='img'><img  src="/image/codeyt.jpg"></div>
+                <div id="description">
+                  <p class="">用影音複習前端
+                  </p>
+                  <p>
+                    •  輸出前端知識 output
+                  </p>
+                </div>                
+                <a href="https://www.youtube.com/channel/UC-1teyrSCuxtpgia0XMr-Ng" target="_blank"><button type="button" class="btn btn-outline-primary">Visit youtube</button></a>
+              </div>
+              <!-- 專案 -->
+              <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
+                <header>空間影像攝影官網</header>
+                <div id='img'><img  src="/image/方生糖影像.jpg"></div>
+                <div id="description">
+                  <p class="">個人品牌形象
+                  </p>
+                  <p>
+                    •  Nuxt框架 / Tailwind
+                  </p>
+                </div>                
+                <a href="https://funsugar-interior-photographer.netlify.app/" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
+              </div>
               <!-- 專案 -->
               <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
                 <header>成寓室內裝修設計官網優化</header>
@@ -77,19 +128,6 @@
               </div>
               <!-- 專案 -->
               <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-                <header>方生糖空間影像攝影官網</header>
-                <div id='img'><img  src="/image/方生糖影像.jpg"></div>
-                <div id="description">
-                  <p class="">個人品牌作品列展示
-                  </p>
-                  <p>
-                    •  NUXT框架
-                  </p>
-                </div>                
-                <a href="https://zesty-platypus-3173f8.netlify.app" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-              </div>
-              <!-- 專案 -->
-              <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
                 <header>建築事務所專案管理系統</header>
                 <div id='img'><img  src="/image/arch-project.jpg"></div>                
                 <div id="description">
@@ -102,35 +140,7 @@
                 </div>
                 <a href="https://medium.com/@wang8119/%E5%BB%BA%E7%AF%89%E4%BA%8B%E5%8B%99%E6%89%80%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1-%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC-d3a86cc6033" target="_blank">技術說明</a>
                 <a href="https://arch-project-management.netlify.app/" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-              </div>              
-              <!-- 專案 -->
-              <!-- <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-                <header>餐廳論壇</header>
-                <div id='img'><img  src="/image/restaurant-vue.jpg"></div>
-                <div id="description">
-                  <p class="">註冊、登入登出帳號。評論、收藏或按讚餐廳。編輯個人。
-                  </p>
-                  <p>
-                    •  前端框架 Vue.js 及 Bootstrap 套件網站
-                    <br>•  axios 串接 RESTful API 餐廳資料 
-                    <br>•  帳密：root@example.com / 12345678
-                  </p>
-                </div>
-                <a href="https://wentingliuu.github.io/restaurant-forum/#/restaurants" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-              </div> -->
-              <!-- 專案 -->
-              <!-- <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-                <header>[前端] To do List</header>
-                <div id='img'><img  src="/image/Todo list.jpg"></div>
-                <div id="description">
-                  <p class="">任務清單新增、刪除、編輯。
-                  </p>
-                  <p>
-                    • 前端框架 Vue.js，建造 SPA 
-                  </p>
-                </div>
-                <a href="https://codepen.io/eddiewoow/pen/RwyoBzY" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-              </div> -->
+              </div>   
               <!-- 專案 -->
               <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
                 <header>飲料結帳pos機</header>
@@ -160,20 +170,6 @@
                 </div>
                 <a href="https://eddie8119.github.io/ALPHA-Shop-/" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
               </div>
-              <!-- 專案 --> 
-              <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-                <header>[協作] 社群網站前後分離分工</header>
-                <div id='img'><img  src="/image/twitter.jpg"></div>
-                <div id="description">
-                  <p class="">前後分離協作專案。復刻 Twitter ，提供推文、回文、按讚、追蹤用戶及編輯個人資料等功能。
-                  </p>
-                  <p>
-                    •  採用 Scrum 敏捷式開發
-                    <br>•  GitHub 協作與版本控制
-                  </p>
-                </div>
-                <a href="https://github.com/eddie8119/ac-twitter-frontend" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-              </div>
           </div>
     </section>
 
@@ -196,20 +192,6 @@
               <a href="https://cargocollective.com/eddiewang/i" target="_blank">技術說明</a>
               <a href="https://pse.is/44yj7j" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
           </div>
-          <!-- <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-            <header>[論述力] 經營設計自媒體</header>
-            <div id='img'><img  src="/image/youtube.jpg"></div>
-            <div id="description">
-              <p class="description-title">方生糖頻道<br>頻道主
-              </p>
-              <p>
-                •  傳播設計觀念
-                <br>•  分享房子、設計、藝術
-                <br>•  探討物體如何用它的外型改變我們的認知
-              </p>
-            </div>
-            <a href="https://pse.is/QU4WG" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-          </div> -->
           <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
             <header>AI視障物件智能辨識輔具</header>
             <div id='img'><img  src="/image/AI視障物件智能辨識輔具專題.jpg"></div>
@@ -221,60 +203,17 @@
             </div>
             <a href="https://www.youtube.com/watch?v=-NY5qn2AHZk" target="_blank">技術說明</a>
             <a href="https://www.youtube.com/watch?v=FMqWC8Rn-AY" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-          </div>        
-          <!-- <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-            <header>[洞察力] 擅長切入產品的新機會點</header>
-            <div id='img'><img  src="/image/sharelike.jpg"></div>
-            <div id="description">
-              <p class="description-title">Sharelike 服務優化第一名提案<br>( 產學合作專案 )
-              </p>
-              <p>
-                •  個人在團隊扮演找出服務發想的切入點
-                <br>•  目標提升顧客使用手機集點的使用率、黏著
-                <br>•  順沿執行長 " 熟客帶新客 " 思路進行延伸
-                <br>•  導入遊戲化元素，讓體驗玩法更活潑
-              </p>
-            </div>
-            <a href="https://cargocollective.com/eddiewang/S" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-          </div>
-          <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-            <header>[服務力] 個人品牌接案</header>
-            <div id='img'><img  src="/image/接案.jpg"></div>
-            <div id="description">
-              <p class="description-title">方生糖空間攝影<br>(個人接案工作室)
-              </p>
-              <p>
-                •  承接公司影片外包委任服務
-                <br>•  積極服務客讓客戶很滿意                
-              </p>
-            </div>
-            <a href="https://www.behance.net/WANG81195321" target="_blank"><button type="button" class="btn btn-outline-primary">Visit Website</button></a>
-          </div>
-          <div id="project-item" class="col-xs-12 col-md-5 col-xl-3">
-            <header>工地現場管理</header>
-            <div id='img'><img  src="/image/工地現場.jpg"></div>
-            <div id="description">
-              <p class="description-title">集合住宅工地<br>( 監造現場工程師 )
-              </p>
-              <p>                
-                •  計畫安排
-                <br>•  控制下包的管理情商
-              </p>
-            </div>            
-          </div> -->
+          </div>  
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="footer">
       <div id="contact-list">
-          <a href="https://github.com/eddie8119" target="blank"><i class="fab fa-github fa-2x"></i></a>
-          <!-- <a href="https://pse.is/QU4WG"><i class="fab fa-youtube fa-2x"></i></a> -->
-          <a href="https://medium.com/@wang8119"><i class="fab fa-medium fa-2x"></i></a>
-          <!-- <a href="https://www.linkedin.com/in/jing-wang-705a50105/"><i class="fab fa-linkedin fa-2x"></i></a> -->
+          <a href="https://github.com/eddie8119" target="blank"><i class="fab fa-github fa-2x"></i></a>        
+          <a href="https://www.youtube.com/channel/UC-1teyrSCuxtpgia0XMr-Ng"><i class="fab fa-youtube fa-2x"></i></a>
       </div>
-      <br>
-      <h6>By Jing</h6>
+      <br>  
     </section>
     <script src="./index.js"></script>
   </body>
