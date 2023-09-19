@@ -165,12 +165,14 @@ img {
 	}
 }
 
-#project-item > a {
+#project-item > a,
+#project-item-flex > a {
 	color: $tx-hover-dark-color;
 	font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
-#project-item > a:hover {
+#project-item > a:hover,
+#project-item-flex > a:hover {
 	color: $brand-main-bg;
 	text-decoration: underline;
 }
@@ -184,6 +186,7 @@ img {
 }
 
 #project-item-flex{
+	width: 150px;
 	display: flex;
 	justify-content: space-around;
 }

@@ -167,12 +167,14 @@ img {
   background-color: #efbe8a;
 }
 
-#project-item > a {
+#project-item > a,
+#project-item-flex > a {
   color: darkred;
   font-size: clamp(1rem, 1.1vw, 1.25rem);
 }
 
-#project-item > a:hover {
+#project-item > a:hover,
+#project-item-flex > a:hover {
   color: #efbe8a;
   text-decoration: underline;
 }
@@ -185,6 +187,7 @@ img {
 }
 
 #project-item-flex {
+  width: 150px;
   display: flex;
   justify-content: space-around;
 }
